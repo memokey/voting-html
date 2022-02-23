@@ -1,0 +1,37 @@
+.m-md {
+  margin: 7px;
+}
+.lang-content {
+  padding: 6px;
+  margin-left: 20px;
+}
+.lang-content .dropdown-menu {
+  width: 100%;
+  min-width: 100%;
+}
+.lang-content li{
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.lang-content li:hover{
+  background-color: #e2e2e2;
+}
+.copyright {
+  text-align: center;
+}
+.footer-bottom {
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.w-90 {
+  width: 70% !important;
+}
+.w-10 {
+  width: 20% !important;
+}
+.pb-md {
+  padding-bottom: 15px;
+}

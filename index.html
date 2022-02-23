@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting System</title>
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Voting System</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Registration</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Modality<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Large same skills</a></li>
+                <li><a href="#">Large different skills</a></li>
+                <li><a href="#">Short1-3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">New round</a></li>
+            <li><a href="#">Activate</a></li>
+            <li class="lang-content">
+              <div class="btn-group dropdown pull-right">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+                  <span class="lang-sm lang-lbl-full" lang="en"><img class="lang-img" src="./img/swedish.png"></span> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" >
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="sw" data-value="swedish"><img src="./img/swedish.png"></span></li>
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="fn" data-value="finish"><img src="./img/finish.png"></span></li>
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="en" data-value="british"><img src="./img/british.png"></span></li>
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="sp" data-value="spanish"><img src="./img/spanish.png"></span></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="content container">
+    <div class="breadcurumb">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Registration</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">Registration Input Panel</div>
+          <div class="panel-body">
+            <div class="container-fluid">
+              <div class="row">
+                <form>
+                  <div class="form-group">
+                    <label>The Event</label>
+                    <input type="text" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label>Couple / Participant No</label>
+                    <input type="number" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label>Names</label>
+                    <input type="text" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label>Representing</label>
+                    <input type="text" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" class="btn btn-success">Register</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">Registration Table Panel</div>
+          <div class="panel-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Couple No</th>
+                  <th scope="col">Names</th>
+                  <th scope="col">Representing</th>
+                  <th scope="col">The Event</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>17</td>
+                  <td>Charles Dixon and Maria Dubois (Stockholm)</td>
+                  <td>Stockholm</td>
+                  <td>National Salsa Contest 2021</td>
+                  <td><a href="#" onclick="alert()">Remove</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container">
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="copyright">
+            <span>© 2022, Voting, All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/multilang.js"></script>
+  <script type="text/javascript" src="./js/style.js"></script>
+</html>
