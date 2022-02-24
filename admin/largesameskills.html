@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voting System</title>
-  <link rel="stylesheet" href="./styles/bootstrap.min.css">
-  <link rel="stylesheet" href="./styles/style.css">
-  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="../js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,8 +25,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                 aria-expanded="false">Modality<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Large same skills</a></li>
-                <li class="active"><a href="#">Large different skills</a></li>
+                <li class="active"><a href="#">Large same skills</a></li>
+                <li><a href="#">Large different skills</a></li>
                 <li><a href="#">Short1-3</a></li>
               </ul>
             </li>
@@ -35,13 +35,13 @@
             <li class="lang-content">
               <div class="btn-group dropdown pull-right">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
-                  <span class="lang-sm lang-lbl-full" lang="en"><img class="lang-img" src="./img/swedish.png"></span> <span class="caret"></span>
+                  <span class="lang-sm lang-lbl-full" lang="en"><img class="lang-img" src="../img/swedish.png"></span> <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" >
-                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="sw" data-value="swedish"><img src="./img/swedish.png"></span></li>
-                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="fn" data-value="finish"><img src="./img/finish.png"></span></li>
-                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="en" data-value="british"><img src="./img/british.png"></span></li>
-                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="sp" data-value="spanish"><img src="./img/spanish.png"></span></li>
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="sw" data-value="swedish"><img src="../img/swedish.png"></span></li>
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="fn" data-value="finish"><img src="../img/finish.png"></span></li>
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="en" data-value="british"><img src="../img/british.png"></span></li>
+                  <li><span class="lang-sm lang-lbl-full" onclick="ChangeLanguage($(this))" lang="sp" data-value="spanish"><img src="../img/spanish.png"></span></li>
                 </ul>
               </div>
             </li>
@@ -56,7 +56,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item">Modality</li>
-          <li class="breadcrumb-item active" aria-current="page">Large different skills</li>
+          <li class="breadcrumb-item active" aria-current="page">Large same skills</li>
         </ol>
       </nav>
     </div>
@@ -79,7 +79,12 @@
                     <small id="emailHelp" class="form-text text-muted" style="display: none;">We'll never share your email with anyone else.</small>
                   </div>
                   <div class="form-group">
-                    <label>Round Remains</label>
+                    <label>Alter1 Round Remains</label>
+                    <input type="number" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted" style="display: none;">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label>Alter2 Round Remains</label>
                     <input type="number" class="form-control">
                     <small id="emailHelp" class="form-text text-muted" style="display: none;">We'll never share your email with anyone else.</small>
                   </div>
@@ -97,28 +102,28 @@
               <div class="row">
                 <form>
                   <div class="form-group form-inline">
-                    <input type="text" class="form-control w-90" placeholder="Round 1 / Skill 1">
-                    <input type="number" class="form-control w-10" placeholder="%">
+                    <input type="text" class="form-control w-90" placeholder="Skill 1">
+                    <input type="number" class="form-control w-20" placeholder="%">
                   </div>
                   <div class="form-group form-inline">
-                    <input type="text" class="form-control w-90" placeholder="Round 2 / Skill 2">
-                    <input type="number" class="form-control w-10" placeholder="%">
+                    <input type="text" class="form-control w-90" placeholder="Skill 2">
+                    <input type="number" class="form-control w-20" placeholder="%">
                   </div>
                   <div class="form-group form-inline">
-                    <input type="text" class="form-control w-90" placeholder="Round 3 / Skill 3">
-                    <input type="number" class="form-control w-10" placeholder="%">
+                    <input type="text" class="form-control w-90" placeholder="Skill 3">
+                    <input type="number" class="form-control w-20" placeholder="%">
                   </div>
                   <div class="form-group form-inline">
-                    <input type="text" class="form-control w-90" placeholder="Round 4 / Skill 4">
-                    <input type="number" class="form-control w-10" placeholder="%">
+                    <input type="text" class="form-control w-90" placeholder="Skill 4">
+                    <input type="number" class="form-control w-20" placeholder="%">
                   </div>
                   <div class="form-group form-inline">
-                    <input type="text" class="form-control w-90" placeholder="Round 5 / Skill 5">
-                    <input type="number" class="form-control w-10" placeholder="%">
+                    <input type="text" class="form-control w-90" placeholder="Skill 5">
+                    <input type="number" class="form-control w-20" placeholder="%">
                   </div>
                   <div class="form-group form-inline">
-                    <input type="text" class="form-control w-90" placeholder="Round 6 / Skill 6">
-                    <input type="number" class="form-control w-10" placeholder="%">
+                    <input type="text" class="form-control w-90" placeholder="Skill 6">
+                    <input type="number" class="form-control w-20" placeholder="%">
                   </div>
                 </form>
               </div>
@@ -133,17 +138,15 @@
           <div class="panel-body">
             <div class="row pb-md">
               <div class="col-md-12">
-                <label for="competitor-list">Participant in Competitions: </label>
+                <label for="competitor-list">Competitors: </label>
                 <span class="competitor-list">17, 3, 12, 21, 9, 12, 1, 14, 13, 5, 20, etc.</span>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group form-inline">
-                  <label>Participant to be judged :</label>
+                  <label>Couple to be judged :</label>
                   <input type="text" class="form-control" readonly>
-                  <label>Round :</label>
-                  <input type="text" class="form-control w-10" readonly>
                 </div>
               </div>
             </div>
@@ -166,7 +169,7 @@
   </footer>
 </body>
 
-  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./js/multilang.js"></script>
-  <script type="text/javascript" src="./js/style.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/multilang.js"></script>
+  <script type="text/javascript" src="../js/style.js"></script>
 </html>

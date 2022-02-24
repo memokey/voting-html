@@ -10,7 +10,7 @@ function setLanguage() {
 function ChangeLanguage(selected) {
 	window.localStorage.langcode = selected.data('value');
 	multilang.setLanguage(selected.data('value'));
-	$('.lang-img').prop('src', './img/' + localStorage.langcode + '.png');
+	$('.lang-img').prop('src', '../img/' + localStorage.langcode + '.png');
 	refreshLabels();
 }
 
