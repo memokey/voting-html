@@ -104,7 +104,8 @@
   text-align: center;
 }
 .block {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .item-letter {
   /* float: none; */
@@ -114,4 +115,25 @@
   margin-left: 10px;
   margin-right: 10px;
   display: inline-block;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.division {
+  width: 500px;
+  border-bottom: 5px solid black;
+  margin: auto;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+#chart {
+  display: flex;
+  margin: auto;
 }
