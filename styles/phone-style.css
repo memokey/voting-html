@@ -1,0 +1,148 @@
+body {
+	background-color: #4026f9;
+	color: #eee;
+}
+h2 {
+	font-size: 25px;
+}
+a {
+	color: #eee;
+}
+.main-content {
+	text-align: center;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 2%;
+}
+.main-content {
+	width: 80%;
+	margin: auto;
+}
+.phone-prefix {
+	background-color: #eee;
+	color: #111;
+}
+.label-mobilenumber {
+	position: relative;
+}
+.label-mobilenumber::before {
+	content: "+46";
+	position: absolute;
+	left: -20%;
+	top: -17%;
+	color: black;
+	background-color: lightblue;
+	/* padding: 2px; */
+}
+.prefix {
+	background-color: lightblue;
+	color: black;
+	padding: 3px 0px;
+	margin-right: 10px;
+}
+input {
+	height: 22px;
+	font-size: 15px;
+	background-color: lightblue;
+	border-color: lightblue;
+	color: black;
+}
+input[type=checkbox] {
+	height: 1.2rem;
+}
+.check-rule a {
+	color: #408af1;
+}
+input:focus {
+	border-color: lightblue;
+	outline: 1px solid lightblue;
+}
+label {
+	color: lightblue;
+}
+button {
+	width: 150px;
+	height: 35px;
+	border: 1px solid #4caf50;
+	background-color: #4caf50;
+	color: #eee;
+	cursor: pointer;
+}
+h2, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+canvas#gameCanvas {
+	display: inline-block;
+	border-bottom: 20px solid #eee;
+	border-left: 4px solid #eee;
+	border-right: 4px solid #eee;
+}
+canvas#headCanvas{
+	border-top: 4px solid #eee;
+	border-left: 4px solid #eee;
+	border-right: 4px solid #eee;
+}
+canvas#idCanvas{
+	position: relative;
+	top: -25px;
+}
+.head-canvas-container {
+	margin-top: 0px; margin-bottom: 0px; height: 50px;
+}
+.game-canvas-container {
+	margin-top: 0px;
+}
+.ready-content {
+	background-color: #b2abf1;
+	width: 350px;
+	height: 370px;
+	margin: auto;
+}
+.ready-content h2 {
+	color: #26244c;
+}
+.voting-title {
+	font-size: 2.5rem;
+	color: black;
+}
+.voting-skill input[type=text] {
+	width: 150px;
+	height: 35px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.voting-skill input[type=number] {
+	width: 30px;
+	height: 35px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.voting-skill button {
+	margin-left: 2px;
+	margin-right: 2px;
+	width: 50px;
+	padding: 0px;
+}
+.voting-title span {
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+}
+.numbers {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+.ranking {
+	width: 200px;
+	font-size: 1.9rem;
+	color: black;
+}
+.voting-ranking {
+	text-align: left;
+	margin-left: 40px;
+}
+.voting-ranking input{
+	height: 25px !important;
+}
